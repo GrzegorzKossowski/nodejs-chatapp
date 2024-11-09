@@ -43,7 +43,7 @@ input.addEventListener("input", function (e) {
       name: firstName.value || "Anonymous",
     });
     isTyping = false;
-  }, 5000);
+  }, 1000);
 });
 
 input.addEventListener("keypress", function (event) {
