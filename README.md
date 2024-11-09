@@ -1,1 +1,1 @@
-# next-chatapp
+# nodejs-chatapp
