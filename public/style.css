@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css?family=Red+Hat+Display:400,500,900&display=swap");
+:root {
+  --text-1: #333;
+  --text-2: #666;
+  --text-3: #999;
+  --line-color: #ccc;
+  --time-bg: #eee;
+  --bg-color: #f7f7f7;
+  --white-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body,
+html {
+  font-family: "Red hat Display", sans-serif;
+  font-weight: 400;
+  line-height: 1.25em;
+  letter-spacing: 0.025em;
+  color: var(--text-1);
+  background: var(--bg-color);
+}
+
+.italic {
+  font-style: italic;
+}
+.post-timestamp {
+  margin-top: 5px;
+  text-align: right;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+}
+
+.app {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 100%;
+  border: 1px solid var(--line-color);
+  border-radius: 10px;
+}
+
+.header {
+  padding: 20px;
+  background-color: var(--white-color);
+}
+#firstName {
+  padding: 5px;
+  font-weight: 400;
+  font-size: 1.2rem;
+  border: 1px solid var(--line-color);
+  border-radius: 5px;
+}
+.chat-container {
+  flex: 1;
+  overflow: hidden;
+  padding: 15px;
+}
+.scrollable {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  white-space: normal;
+  max-height: 100%;
+  padding-right: 20px;
+}
+
+.message {
+  border: 1px solid var(--line-color);
+  padding: 15px;
+  margin: 5px;
+  width: fit-content;
+  word-break: break-all;
+}
+.incoming {
+  align-self: flex-start;
+  border-radius: 1.125rem 1.125rem 1.125rem 0;
+  background-color: #fff;
+  text-align: left;
+}
+.outgoing {
+  align-self: flex-end;
+  border-radius: 1.125rem 1.125rem 0 1.125rem;
+  background: var(--text-1);
+  color: white;
+  text-align: right;
+}
+.bottom {
+  padding: 10px;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+textarea {
+  padding: 10px;
+  height: 7rem;
+  line-height: 1.7frem;
+  font-size: 1.2rem;
+  resize: none;
+  background-color: var(--bg-color);
+  border: 1px solid var(--line-color);
+  border-radius: 10px;
+}
+.button-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+#sendBtn {
+  flex: 1;
+}
+/* ------------------ */
+/* 
+#form {
+  background: rgba(0, 0, 0, 0.15);
+  padding: 0.25rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: 3rem;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+}
+#input {
+  border: none;
+  padding: 0 1rem;
+  flex-grow: 1;
+  border-radius: 2rem;
+  margin: 0.25rem;
+}
+#input:focus {
+  outline: none;
+}
+#form > button {
+  background: #333;
+  border: none;
+  padding: 0 1rem;
+  margin: 0.25rem;
+  border-radius: 3px;
+  outline: none;
+  color: #fff;
+}
+
+#messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#messages > li {
+  padding: 0.5rem 1rem;
+}
+#messages > li:nth-child(odd) {
+  background: #efefef;
+} */
